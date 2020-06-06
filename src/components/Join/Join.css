@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
 html, body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+  }
+  body{
+    background:url("sugarandspice.png");
+    background-size: cover;
   }
   
   #root {
@@ -18,7 +24,9 @@ html, body {
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-color: #1A1A1D;
+   
+    
+    
   }
   
   .joinInnerContainer {
@@ -36,11 +44,19 @@ html, body {
     font-size: 2.5em;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
+    font-family: 'Montaga', serif;
   }
-  
+  .big_heading {
+    color: white;
+    font-size: 4em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    font-family: 'Montaga', serif;
+  }
   .button {
       color: #fff !important;
       text-transform: uppercase;
+      font-family: 'Montaga', serif;
       text-decoration: none;
       background: #2979FF;
       padding: 20px;
@@ -56,11 +72,23 @@ html, body {
   
   @media (min-width: 320px) and (max-width: 480px) {
     .joinOuterContainer {
-      height: 100%;
+      width:vw;
+      
+      flex-direction: column;
+      justify-content: space-around;
     }
   
     .joinInnerContainer {
-      width: 90%;
+      width: 60%;
+      margin-left: 3.5em;
+      margin-bottom:9em;
+    }
+    .big_heading{
+      font-size:3em;
+      margin-top: 2em;
+      margin-bottom:0;
+      margin-left: 2em;
+      
     }
   
   
